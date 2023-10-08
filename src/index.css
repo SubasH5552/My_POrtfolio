@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Kanit:ital,wght@1,300&family=Lexend+Tera:wght@800&family=Sedgwick+Ave+Display&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base{
+    body {
+        @apply font-[Cinzel];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
+    
+}
+@layer base {
+    html {
+        @apply bg-slate-400;
+    }
+}
+
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+}
+
+.content-div:hover {
+    background-image: linear-gradient(
+        to right, rgba(12, 23, 46, 0.8), hsla(242, 23%, 50%, 0.8)
+    )!important;
+}
